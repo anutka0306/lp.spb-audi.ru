@@ -373,7 +373,7 @@
         bottom: 3px;
         z-index: 11;
         box-shadow: none;
-        background: #ff6000;
+        background: #EE3428;
         overflow: hidden;
         z-index: 1000;
     }
@@ -450,3 +450,17 @@
     }
 
 }
+@media (min-width: 1140px) { 
+    .top-menu {
+        height: 80px;
+        display: flex;
+        align-items: flex-start;
+        padding-top: 25px;
+        justify-content: space-between;
+        position: fixed;
+        background-color: rgba(0,0,0, 0.8);
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 9999;
+    }
+ }

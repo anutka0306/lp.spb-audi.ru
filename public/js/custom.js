@@ -1,5 +1,6 @@
 $(document).ready(function (){
-
+$("input[type='phone']").inputmask("+7-999-999-99-99");
+$("input[type='tel']").inputmask("+7-999-999-99-99");
     if(window.innerWidth <= 420){
         $(window).scroll(function() {
            $('.top-menu').css({'background-color':'rgba(0,0,0,.8)'});
