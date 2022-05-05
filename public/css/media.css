@@ -470,4 +470,19 @@
         width: 100%;
         text-align: center;
     }
+    header {
+        /*margin-top: -50px;*/
+        height: 75%;
+    }
+    .banner__left_wrapper {
+        margin-top: -50px;
+    }
+    .banner-advantages {
+        bottom: 125px;
+    }
+    .car-check__request {
+        margin-top: -50px !important;
+        padding-top: 0;
+    }
+
 }

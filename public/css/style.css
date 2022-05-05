@@ -1578,3 +1578,7 @@ news__body p,
 .bottom-cover {
   display: none;
 }
+
+.news__top-header {
+  height: 75px !important;
+}
