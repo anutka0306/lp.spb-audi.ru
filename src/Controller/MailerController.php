@@ -63,24 +63,20 @@ class MailerController extends AbstractController
             'sync'    => '0', //
             'is_need_check_order_in_processing' => '1', // Включение проверки заявок на дубли
             'is_need_check_order_in_processing_append' => '1', // Если создана дублирующая заявка, в нее будет добавлен комментарий об этом
-            'is_skip_sending' => '1', // Не отправлять заявку в CRM.
+            'is_skip_sending' => '0', // Не отправлять заявку в CRM.
             'fields'  => array(
-                'address' => 'И31АС4',
-                'mark'    => 'Audi',
-                'model'   => '-',
-                'site'    => 'audi.pikms.ru',
+                'Адрес' => 'И31АС4',
+                'Марка'    => 'Audi',
+                'Модель'   => '-',
+                'Сайт'    => 'audi.pikms.ru',
                 // Массив дополнительных полей. Если дополнительные поля не нужны, оставьте массив пустым.
                 // Примеры дополнительных полей смотрите в таблице ниже.
                 // Помимо массива fields, который используется для сделки, есть еще массив client_fields, который используется для установки полей контакта.
-                "charset" => "Windows-1251", // Сервер преобразует значения полей из указанной кодировки в UTF-8.
+//                "charset" => "Windows-1251", // Сервер преобразует значения полей из указанной кодировки в UTF-8.
             ),
         );
 
         file_get_contents("https://cloud.roistat.com/api/proxy/1.0/leads/add?" . http_build_query($roistatData));
-
-
-
-
 
         return new JsonResponse(['success'=>'<p>Спасибо! Ваша заявка отправлена.</p>']);
     }
