@@ -484,5 +484,11 @@
         margin-top: -50px !important;
         padding-top: 0;
     }
+    .header__phone {
+        width: 100%;
+    }
+    .header__phone .header__phone_phone {
+        width: 100%;
+    }
 
 }
