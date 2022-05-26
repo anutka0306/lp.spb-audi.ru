@@ -26,46 +26,46 @@
     </div>
 </div>
 
-<script>
-    $(document).ready(function() {
-        $('.popup1_send').click(function (e) {
-            e.preventDefault();
-            if ($('#popup1_tel').val() == '') {
-                alert('Заполните поле телефон');
-                return;
-            }
-            if ($('#popup1_tel').val().length < 11) {
-                alert('Неверный формат номер телефона');
-                return;
-            }
+{#<script>#}
+{#    $(document).ready(function() {#}
+{#        $('.popup1_send').click(function (e) {#}
+{#            e.preventDefault();#}
+{#            if ($('#popup1_tel').val() == '') {#}
+{#                alert('Заполните поле телефон');#}
+{#                return;#}
+{#            }#}
+{#            if ($('#popup1_tel').val().length < 11) {#}
+{#                alert('Неверный формат номер телефона');#}
+{#                return;#}
+{#            }#}
 
-            if ($('#popup1_name').val() == '') {
-                alert('Заполните поле Имя');
-                return;
-            }
-            let phone = $('#popup1_tel').val();
-            let name = $('#popup1_name').val();
+{#            if ($('#popup1_name').val() == '') {#}
+{#                alert('Заполните поле Имя');#}
+{#                return;#}
+{#            }#}
+{#            let phone = $('#popup1_tel').val();#}
+{#            let name = $('#popup1_name').val();#}
 
-            $.ajax({
-                url: "/callback_form",
-                type: "POST", //метод отправки
-                dataType: "html", //формат данных
+{#            $.ajax({#}
+{#                url: "/callback_form",#}
+{#                type: "POST", //метод отправки#}
+{#                dataType: "html", //формат данных#}
 
-                data: {
-                    'phone': phone,
-                    'name': name,
-                },
-                success: function (response) { //Данные отправлены успешно
-                    //$('.callback-popup-body').html('<p style="text-align: center; font-weight: 700; padding: 20px;">Спасибо! Ваша заявка отправлена.</p>');
-                    $.magnificPopup.close();
-                    console.log(response);
-                    window.location.replace("/confirm");
-                },
-                error: function (response) { // Данные не отправлены
-                    console.log('error');
-                }
-            });
+{#                data: {#}
+{#                    'phone': phone,#}
+{#                    'name': name,#}
+{#                },#}
+{#                success: function (response) { //Данные отправлены успешно#}
+{#                    //$('.callback-popup-body').html('<p style="text-align: center; font-weight: 700; padding: 20px;">Спасибо! Ваша заявка отправлена.</p>');#}
+{#                    $.magnificPopup.close();#}
+{#                    console.log(response);#}
+{#                    window.location.replace("/confirm");#}
+{#                },#}
+{#                error: function (response) { // Данные не отправлены#}
+{#                    console.log('error');#}
+{#                }#}
+{#            });#}
 
-        });
-    });
-</script>
+{#        });#}
+{#    });#}
+{#</script>#}

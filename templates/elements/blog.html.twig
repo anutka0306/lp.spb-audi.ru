@@ -6,7 +6,8 @@
                 {% for newsItem in news %}
                     <div class="blog__item">
                     <div class="blog__item_img">
-                        <img loading="lazy" src="/images/news/{{ newsItem.alias }}/image.jpg" alt="">
+                        <img class="lazyload" data-sizes="auto"
+                     data-src="/images/news/{{ newsItem.alias }}/image.jpg" alt="">
                     </div>
                     <span class="blog__item_name">{{ newsItem.h1 }}</span>
                     <div class="blog__item_short-text">

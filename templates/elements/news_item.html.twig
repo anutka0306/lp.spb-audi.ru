@@ -15,7 +15,8 @@
             <div class="col-lg-6 col-md-12">
                 {% if newsItem.image is not empty %}
                     <div class="news__header_image">
-                        <img loading="lazy" src="/images/news/{{ newsItem.alias }}/{{ newsItem.image }}" alt="#">
+                        <img class="lazyload" data-sizes="auto"
+                     data-src="/images/news/{{ newsItem.alias }}/{{ newsItem.image }}" alt="#">
                     </div>
                 {% endif %}
             </div>
@@ -30,7 +31,8 @@
                 {% if gallery is not empty %}
                 <div class="news__body_gallery">
                     {% for image in gallery%}
-                    <img loading="lazy" src="{{ image }}" alt="">
+                    <img class="lazyload" data-sizes="auto"
+                     data-src="{{ image }}" alt="">
 
                     {% endfor %}
                 </div>

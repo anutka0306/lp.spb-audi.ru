@@ -19,7 +19,10 @@
 {#                    <video controls width="570" height="428">#}
 {#                        <source src="{{ asset('video/our-sklad.mp4') }}" type="video/mp4">#}
 {#                    </video>#}
-                    <iframe width="570" height="428" src="https://www.youtube.com/embed/siNIzak-j6U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{#                    <iframe width="570" height="428" src="https://www.youtube.com/embed/siNIzak-j6U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>#}
+                    <iframe class="lazyload"
+                            data-src="https://www.youtube.com/embed/siNIzak-j6U"
+                            width="570" height="428" src="https://www.youtube.com/embed/siNIzak-j6U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
