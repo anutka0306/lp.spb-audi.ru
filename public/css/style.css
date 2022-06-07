@@ -18,7 +18,7 @@ header::before {
   display: block;
   width: 231px;
   height: 233px;
-  background-image: url(../images/bg_elem_before.png);
+  background-image: url(../images/bg_elem_before.webp);
   position: absolute;
   left: -100px;
   bottom: 50px;
@@ -30,7 +30,7 @@ header::after {
   display: block;
   width: 161px;
   height: 150px;
-  background-image: url(../images/bg_elem_after.png);
+  background-image: url(../images/bg_elem_after.webp);
   position: absolute;
   top: 173px;
   right: -80px;
@@ -245,7 +245,7 @@ header::after {
 .banner__right-content {
   width: 100%;
   height: 100%;
-  background-image: url(../images/audi_header.png);
+  background-image: url(../images/audi_header.webp);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom center;
@@ -519,7 +519,7 @@ header::after {
 /* Our Works */
 .our-works {
   position: relative;
-  background-image: url(../images/our-works_bg.png);
+  background-image: url(../images/our-works_bg.webp);
   height: 650px;
   opacity: 1;
   background-size: cover;
@@ -734,7 +734,7 @@ header::after {
 
 /* Diagnostic Callback*/
 .diagnostic-callback {
-  background-image: url(../images/diagnostic_bg.png);
+  background-image: url(../images/diagnostic_bg.webp);
   background-color: #09091c;
   opacity: 1;
   background-size: cover;
@@ -846,7 +846,7 @@ header::after {
 /* Reviews */
 .reviews {
   margin-top: 50px;
-  background-image: url(../images/reviews_bg.png);
+  background-image: url(../images/reviews_bg.webp);
   background-color: #09091c;
   opacity: 1;
   background-size: cover;
@@ -887,7 +887,7 @@ header::after {
   content: "";
   width: 12px;
   height: 12px;
-  background-image: url(../images/icons/g.png);
+  background-image: url(../images/icons/g.webp);
   display: inline-block;
   padding-right: 18px;
   background-repeat: no-repeat;
@@ -898,7 +898,7 @@ header::after {
   content: "";
   width: 12px;
   height: 12px;
-  background-image: url(../images/icons/gis.png);
+  background-image: url(../images/icons/gis.webp);
   display: inline-block;
   padding-right: 18px;
   background-repeat: no-repeat;
@@ -909,7 +909,7 @@ header::after {
   content: "";
   width: 12px;
   height: 12px;
-  background-image: url(../images/icons/yandexmap.png);
+  background-image: url(../images/icons/yandexmap.webp);
   display: inline-block;
   padding-right: 18px;
   background-repeat: no-repeat;
@@ -1056,7 +1056,7 @@ header::after {
   width: 555px;
   height: 300px;
   border-radius: 10px;
-  background-image: url(../images/offer-bg.png);
+  background-image: url(../images/offer-bg.webp);
   background-color: #09091c;
   opacity: 1;
   background-repeat: no-repeat;
