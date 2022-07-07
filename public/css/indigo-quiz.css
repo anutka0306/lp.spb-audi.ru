@@ -17,6 +17,7 @@
     width: 100%;
     height: 500px;
     margin: 0;
+    border-bottom: 1px solid red;
 }
 .indigo_quiz_page {
     width: 100%;
@@ -77,7 +78,7 @@
     border-radius: 5px;
     padding: 15px;
     padding-bottom: 5px;
-    border: 1px solid indigo;
+    border: 1px solid rgba(170, 183, 184, 0.1);
     transition: .5s all;
     cursor: pointer;
 
@@ -90,7 +91,7 @@
     border-radius: 5px;
     padding: 15px;
     padding-bottom: 5px;
-    border: 1px solid indigo;
+    border: 1px solid rgba(170, 183, 184, 0.1);
     transition: .5s all;
     cursor: pointer;
 }
@@ -105,7 +106,7 @@
 }
 
 .indigo_quiz_card:hover {
-    box-shadow: inset 0 0 5px indigo;
+    box-shadow: inset 0 0 5px crimson;
     transition: .5s all;
     cursor: pointer;
 }
@@ -181,7 +182,13 @@
     margin: 0;
     display: grid;
     grid-template-columns: 70% 30%;
-    border-top: 1px solid indigo;
+    /*border-top: 1px solid red;*/
+    transition: all .7s;
+}
+
+.indigo_quiz_button_hidden {
+    display: none;
+    transition: all .7s;
 }
 
 .indigo_quiz_button_progress {
@@ -220,6 +227,8 @@
     /*background-color: bisque;*/
     display: flex;
     color: white;
+    opacity: 1;
+    transition: all .7s;
 }
 
 .indigo_quiz_button_revert a {
@@ -228,17 +237,17 @@
     display: block;
     margin: auto;
     margin-right: 10px;
-    background-color: indigo;
+    background-color: crimson;
     border-radius: 15px;
     font-size: 20px;
     line-height: 38px;
     text-align: center;
-    border: 1px solid indigo;
+    border: 1px solid red;
     color: white !important;
 }
 
 .indigo_quiz_button_revert a:hover {
-    color: indigo !important;
+    color: crimson !important;
     background-color: transparent;
     cursor: pointer;
 
@@ -283,7 +292,7 @@
     float: left;
     padding: 50px;
     display: flex;
-    border-left: 1px solid indigo;
+    border-left: 1px solid red;
     /*background-color: brown;*/
 }
 
@@ -320,7 +329,7 @@
     transition: .5s all;
 }
 .indigo_quiz_page_scroll {
-    height: 0px !important;
+    height: 175px !important;
     transition: .7s all;
 }
 
@@ -328,11 +337,15 @@
     width: 20px;
     height: 20px;
     border-radius: 50px;
-    background-color: indigo;
+    background-color: #ee3428;
     margin-top: 5px;
     margin-left: 5px;
     margin-right: 15px;
 
+}
+
+.progress-bar {
+    background-color: crimson;
 }
 
 
@@ -357,6 +370,8 @@
 
     }
 }
+
+
 
 @media (max-width: 991px) {
     .page_image {
@@ -404,6 +419,7 @@
 
     .indigo_quiz_button_revert a {
         width: 90%;
+        transition: all .7s;
     }
 
     .indigo_quiz_card_info {
