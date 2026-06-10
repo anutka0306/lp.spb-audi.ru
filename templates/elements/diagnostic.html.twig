@@ -7,9 +7,18 @@
             <div class="col-12 diagnostic-callback__form">
                 <form action="#">
                     <input type="text" id="popup1_name" name="popup1_name" placeholder="Ваше имя">
-                    <input type="tel" id="popup1_tel" name="popup1_tel" name="phone" placeholder="Номер телефона">
+                    <input type="tel" id="popup1_tel"{#name="popup1_tel"#} name="phone" placeholder="Номер телефона">
+                    
+                    {#<input type="hidden" id="popup1_address" name="popup1_address" value="V11">#}
+					<select id="popup1_address" name="popup1_address">
+                            <option value="">Выберите адрес</option>
+                            <option value="СПБ4">Санкт-Петербург, Турухтанные Острова, 12</option>
+                            <option value="В2АЕ">Санкт-Петербург, ул. Ворошилова д. 2АЕ</option>
+                            <option value="К20">Любой адрес</option>
+                    </select>
+                    
                     <div class="diagnostic-callback__form_btn-container">
-                        <input class="popup1_send" type="submit" value="Отправить">
+                        <input class="popup1_send" type="submit" value="Отправить" onclick="ym(87965785,'reachGoal','send_callback'); return true;">
                     </div>
                 </form>
             </div>
@@ -18,9 +27,7 @@
                     <img class="lazyload" data-sizes="auto"
                      data-src="/images/tel-icon.webp" alt="">
                 </div>
-                <span class="header__phone_icon_text">или позвоните нам по номеру <br> +7 (499) 391-18-74</span>
-                <div class="header__whatsapp_whatsapp"><i class="fa-brands fa-whatsapp"></i></div>
-                <span class="header__whatsapp_whatsapp_text">Мы в WhatsApp</span>
+                <span class="header__phone_icon_text">или позвоните нам по номеру <br> +7 (812) 945-75-86</span>
             </div>
         </div>
     </div>

@@ -1,11 +1,10 @@
 {% extends 'base.html.twig' %}
-
 {% block title %}Автосервис Audi в Москве - ПИК{% endblock %}
-{% block description %}Профильный Автосервис Ауди в Москве по адресу ул. Ибрагимова вл. 31А. Ремонт, ТО. {% endblock %}
-
+{% block description %}Профильный Автосервис Ауди в Москве по адресу ул. Вилюйская 11с3. Ремонт, ТО. {% endblock %}
 {% block body %}
     {% block header%}{{ include('elements/header_main.html.twig') }}{% endblock%}
     {#{{ include('elements/car_check_request.html.twig') }}#}
+    {{ include('elements/special-offers.html.twig') }}
     {{ include('scripts/indigo-quiz.html.twig') }}
 {#    {{ include('elements/quiz_body.html.twig') }}#}
     {{ include('elements/make_often.html.twig') }}

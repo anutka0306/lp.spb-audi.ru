@@ -60,6 +60,7 @@ $('#indigo_quiz_submit').click(function() {
                 'probeg': indigo_quiz_select['Пробег'],
                 'date': indigo_quiz_select['Дата ремонта'],
                 'zapchasti': indigo_quiz_select['Запчасти'],
+                'address': $('#indigo_quiz_address').val(),
 
 
 

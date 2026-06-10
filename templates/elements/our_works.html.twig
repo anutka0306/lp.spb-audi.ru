@@ -13,13 +13,13 @@
             <div class="col-lg-6 col-md-12 our-works__text">
                 <div class="our-works__slider_content">
                     {% for newsItem in news %}
-                        <div data-image="{{ newsItem.alias }}/{{ newsItem.image }}">
+                        <div data-image="{{ newsItem.alias }}/image.webp">
                         <span class="our-works__slider_content_title">
                             <a href="/news/{{ newsItem.alias }}"> {{ newsItem.h1 }}</a>
                         </span>
-                        <span class="our-works__slider_content_subtitle">
+                        {#<span class="our-works__slider_content_subtitle">
                             Что было сделано:
-                        </span>
+                        </span>#}
                         <div class="our-works__slider_content_text">
                             {{ newsItem.shortText|raw }}
                         </div>

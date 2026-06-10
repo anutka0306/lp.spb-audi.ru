@@ -53,7 +53,7 @@ class NewsController extends AbstractController
         $filesystem = new Filesystem();
         $finder = new Finder();
         if($filesystem->exists($_SERVER['DOCUMENT_ROOT'].$folder)){
-            $finder->files()->name(['*.jpeg','*.jpg','*.png'])->in($_SERVER['DOCUMENT_ROOT'].$folder);
+            $finder->files()->name(['*.jpeg','*.jpg','*.png', '*.webp'])->in($_SERVER['DOCUMENT_ROOT'].$folder);
             foreach ($finder as $file){
                 $files[] = $folder.$file->getFileName();
             }

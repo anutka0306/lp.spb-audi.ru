@@ -361,7 +361,18 @@
                                 <input type="tel" class="form-control" id="indigo_quiz_phone" placeholder="+7 (" aria-label="Phone" aria-describedby="basic-addon1">
                             </div>
                             <div class="input-group mb-3">
-                                <button type="button" id="indigo_quiz_submit" class="btn btn-outline-primary w-100">Отправить заявку</button>
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">Адрес:</span>
+                                </div>
+                                <select class="form-control" name="address" id="indigo_quiz_address" placeholder="Выберите адрес" aria-label="Address" aria-describedby="basic-addon1">
+                                    <option value="">Выберите адрес</option>
+                                    <option value="СПБ4">Санкт-Петербург, Турухтанные Острова, 12</option>
+                                    <option value="В2АЕ">Санкт-Петербург, ул. Ворошилова д. 2АЕ</option>
+                                    <option value="К20">Любой адрес</option>
+								</select>
+                            </div>
+                            <div class="input-group mb-3">
+                                <button type="button" id="indigo_quiz_submit" class="btn btn-outline-primary w-100" onclick="ym(87965785,'reachGoal','send_callback'); return true;">Отправить заявку</button>
                             </div>
                         </div>
 

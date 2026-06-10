@@ -2,192 +2,7 @@ body {
   overflow-x: hidden;
   height: 1000px;
 }
-header {
-  position: relative;
-  background-image: url(../images/banner-bg.webp);
-  height: 780px;
-  background-color: #09091c;
-  opacity: 1;
-  background-size: cover;
-  background-repeat: no-repeat;
-  overflow-x: hidden;
-}
 
-header::before {
-  content: "";
-  display: block;
-  width: 231px;
-  height: 233px;
-  background-image: url(../images/bg_elem_before.webp);
-  position: absolute;
-  left: -100px;
-  bottom: 50px;
-  background-repeat: no-repeat;
-}
-
-header::after {
-  content: "";
-  display: block;
-  width: 161px;
-  height: 150px;
-  background-image: url(../images/bg_elem_after.webp);
-  position: absolute;
-  top: 173px;
-  right: -80px;
-  background-repeat: no-repeat;
-}
-
-.top-menu {
-  height: 75px;
-  display: flex;
-  align-items: flex-start;
-  padding-top: 25px;
-  justify-content: space-between;
-}
-.header__logo {
-  width: 140px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.header__logo_audi {
-  width: 83px;
-  height: 44px;
-  background: #ee3428;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.header_logo_description {
-  font-family: Gilroy, sans-serif;
-  color: #ffffff;
-  font-size: 12px;
-}
-.header__address {
-  display: flex;
-  justify-content: center;
-  width: 250px;
-  align-items: center;
-}
-.header__address_icon {
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  background-color: #ee3428;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 10px;
-}
-.header_address-address {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-}
-.header_address-address p {
-  font-family: Gilroy, sans-serif;
-  color: #ffffff;
-  font-size: 13px;
-  margin-bottom: 0;
-}
-.header_address-address a {
-  font-family: Gilroy, sans-serif;
-  color: #ee3428;
-  font-size: 12px;
-}
-
-.header__audi-partners {
-  width: 170px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.header__audi-partners span {
-  color: #ffffff;
-  font-family: Gilroy, sans-serif;
-  font-size: 13px;
-}
-
-.header__phone {
-  display: flex;
-  width: 170px;
-  justify-content: center;
-  align-items: center;
-}
-.header__phone_icon {
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  background-color: #ee3428;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 10px;
-}
-.header__phone_phone {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-}
-.header__phone_phone .phone_link {
-  color: #ffffff;
-  font-family: Gilroy, sans-serif;
-  font-size: 13px;
-  text-decoration: none;
-}
-.header__phone_phone .working-now {
-  margin-bottom: 0;
-  color: #26d42d;
-  font-family: Gilroy, sans-serif;
-  font-size: 12px;
-  display: flex;
-  align-items: center;
-}
-.header__phone_phone .working-now::before {
-  content: "";
-  width: 4px;
-  height: 4px;
-  display: block;
-  background-color: #26d42d;
-  border-radius: 50%;
-  margin-right: 5px;
-}
-.header__whatsapp {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.header__whatsapp_whatsapp {
-  width: 24px;
-  height: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #26d42d;
-  border-radius: 50%;
-  margin-right: 22px;
-}
-.header__whatsapp i {
-  color: #ffffff;
-}
-.header__callback_btn {
-  border: 1px solid #ee3428;
-  width: 146px;
-  height: 44px;
-  border-radius: 90px;
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #ffffff;
-  font-family: Gilroy, sans-serif;
-  font-size: 12px;
-}
-.header__callback_btn:hover {
-  color: #ee3428;
-}
 
 .banner__left-content {
   margin-top: 180px;
@@ -1231,7 +1046,7 @@ header::after {
 .map__address {
   width: 338px;
   /* height: 434px;*/
-  height: 250px;
+  height: 410px;
   position: absolute;
   top: 45px;
   left: 15%;
@@ -1258,7 +1073,9 @@ header::after {
   max-width: 220px;
 }
 .map__address_address_text span {
-  display: block;
+  display: flex;
+  padding-bottom: 5px;
+  /*display: block;*/
   font-family: Gilroy, sans-serif;
   font-size: 15px;
 }
@@ -1313,6 +1130,9 @@ header::after {
 .map__callback_btn:hover {
   background-color: #ee3428;
   color: #ffffff;
+}
+#ymaps_lazy {
+  height: 550px;
 }
 /* Footer */
 footer.footer {
