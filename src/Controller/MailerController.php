@@ -32,7 +32,7 @@ class MailerController extends AbstractController
         }
 		
         $arr = array(
-            "Заявка с" => " с формы сайта https://audi.piksp.ru/ ",
+            "Заявка с" => " с формы сайта https://lp.spb-audi.ru/ ",
             "Телефон" => $request->get('phone'),
            "Имя" => $request->get('name'),
            "Адрес" => $request->get('address'),
@@ -70,7 +70,7 @@ class MailerController extends AbstractController
                 'Адрес' => $request->get('address'),
                 'Марка'    => 'Audi',
                 'Модель'   => '-',
-                'Сайт'    => 'audi.piksp.ru',
+                'Сайт'    => 'lp.spb-audi.ru',
                 // Массив дополнительных полей. Если дополнительные поля не нужны, оставьте массив пустым.
                 // Примеры дополнительных полей смотрите в таблице ниже.
                 // Помимо массива fields, который используется для сделки, есть еще массив client_fields, который используется для установки полей контакта.
@@ -105,7 +105,7 @@ class MailerController extends AbstractController
         }
 
         $arr = array(
-            "Заявка с" => " с формы сайта https://audi.piksp.ru/ ",
+            "Заявка с" => " с формы сайта https://lp.spb-audi.ru/",
             "Телефон" => $request->get('phone'),
             "Имя" => $request->get('name'),
             "Адрес" => $request->get('address'),
@@ -176,7 +176,7 @@ class MailerController extends AbstractController
         }
 
         $arr = array(
-            "Заявка с" => " с квиза сайта https://audi.piksp.ru/ ",
+            "Заявка с" => " с квиза сайта https://lp.spb-audi.ru/ ",
             "Телефон" => $request->get('phone'),
             "Имя" => $request->get('name'),
             "Марка" => $request->get('mark'),

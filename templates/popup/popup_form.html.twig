@@ -19,12 +19,7 @@
                 <form action="#">
                     <input type="tel" id="popup1_tel" name="popup1_tel" placeholder="Телефон *">
                     <input type="text" id="popup1_name" name="popup1_name" placeholder="Ваше имя ( не обязательно )">
-                    {#<input type="hidden" id="popup1_address" name="popup1_address" value="V11">#}
-					{#<select id="popup1_address" name="popup1_address" placeholder="Выберите адрес">
-                        <option value="">Выберите адрес</option>
-                        <option value="V11">Вилюйская улица, д. 11 с.3</option>
-                        <!--<option value="I31">ул. Ибрагимова вл. 31А, ст. 4</option>-->
-                    </select>#}
+
                     <select name="popup1_address" id="popup1_address">
                             <option value="">Выберите адрес</option>
                             <option value="СПБ4">Санкт-Петербург, Турухтанные Острова, 12</option>
@@ -38,46 +33,3 @@
     </div>
 </div>
 
-{#<script>#}
-{#    $(document).ready(function() {#}
-{#        $('.popup1_send').click(function (e) {#}
-{#            e.preventDefault();#}
-{#            if ($('#popup1_tel').val() == '') {#}
-{#                alert('Заполните поле телефон');#}
-{#                return;#}
-{#            }#}
-{#            if ($('#popup1_tel').val().length < 11) {#}
-{#                alert('Неверный формат номер телефона');#}
-{#                return;#}
-{#            }#}
-
-{#            if ($('#popup1_name').val() == '') {#}
-{#                alert('Заполните поле Имя');#}
-{#                return;#}
-{#            }#}
-{#            let phone = $('#popup1_tel').val();#}
-{#            let name = $('#popup1_name').val();#}
-
-{#            $.ajax({#}
-{#                url: "/callback_form",#}
-{#                type: "POST", //метод отправки#}
-{#                dataType: "html", //формат данных#}
-
-{#                data: {#}
-{#                    'phone': phone,#}
-{#                    'name': name,#}
-{#                },#}
-{#                success: function (response) { //Данные отправлены успешно#}
-{#                    //$('.callback-popup-body').html('<p style="text-align: center; font-weight: 700; padding: 20px;">Спасибо! Ваша заявка отправлена.</p>');#}
-{#                    $.magnificPopup.close();#}
-{#                    console.log(response);#}
-{#                    window.location.replace("/confirm");#}
-{#                },#}
-{#                error: function (response) { // Данные не отправлены#}
-{#                    console.log('error');#}
-{#                }#}
-{#            });#}
-
-{#        });#}
-{#    });#}
-{#</script>#}

@@ -894,6 +894,11 @@ $(document).ready(function () {
     focus: "#popup1_tel",
   });
 
+   $(".special-offers__slide-button").magnificPopup({
+      type: "inline",
+      focus: "#popup1_tel",
+    });
+
   $(".about_send_btn").magnificPopup({
     type: "inline",
     focus: "#popup1_tel",
